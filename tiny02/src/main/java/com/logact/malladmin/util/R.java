@@ -1,6 +1,4 @@
-package com.logact.malladmin.unit;
-
-import com.baomidou.mybatisplus.extension.enums.ApiErrorCode;
+package com.logact.malladmin.util;
 
 import java.io.Serializable;
 

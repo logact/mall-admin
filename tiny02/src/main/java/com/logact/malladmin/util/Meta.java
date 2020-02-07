@@ -1,4 +1,4 @@
-package com.logact.malladmin.unit;
+package com.logact.malladmin.util;
 
 /**
  * @author: logact

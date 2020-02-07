@@ -9,5 +9,4 @@ import com.logact.malladmin.entity.RectLogin;
  */
 public interface LoginService {
     public RectLogin validateUser(String username, String password);
-
 }

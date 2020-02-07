@@ -5,6 +5,7 @@ import com.logact.malladmin.dao.SpUserDao;
 import com.logact.malladmin.entity.RectLogin;
 import com.logact.malladmin.entity.SpUser;
 import com.logact.malladmin.service.LoginService;
+import com.logact.malladmin.util.CommonUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,12 +28,14 @@ public class LoginServiceImp implements LoginService {
         if(spUser==null){
             return null;
         }
+
         rectLogin.setUsername(spUser.getUsername());
         rectLogin.setId(spUser.getUserId());
         rectLogin.setEmail(spUser.getUserEmail());
         rectLogin.setMobile(spUser.getUserTel());
         rectLogin.setRid(31);//这里的角色统一为测试角色
         rectLogin.setToken("token place");
+        rectLogin.setToken(CommonUtil.getToken(String.valueOf(spUser.getUserId()), spUser.getPassword()));
         return rectLogin;
     }
 

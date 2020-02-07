@@ -2,7 +2,7 @@ package com.logact.malladmin.controller;
 
 import com.logact.malladmin.entity.U2p;
 import com.logact.malladmin.service.LoginService;
-import com.logact.malladmin.unit.R;
+import com.logact.malladmin.util.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
